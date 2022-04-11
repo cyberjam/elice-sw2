@@ -26,6 +26,8 @@
             ol {
                 margin-top: 0;
             }
+
+            
             @media all and (min-width: 480px) { 
                 #container {
                     display: grid;
@@ -40,6 +42,18 @@
         </style>
     </head>
     <body>
+        <input type="button" value="night" 
+            onclick="
+            document.querySelector('body').style.backgroundColor = 'black';
+            document.querySelector('body').style.color = 'white';
+            "
+        >
+        <input type="button" value="day" 
+            onclick="
+            document.querySelector('body').style.backgroundColor = 'white';
+            document.querySelector('body').style.color = 'black';
+            "
+        >
         <h1> <a href="welcom.html">WEB</a></h1>
         
         <div id="container">
