@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <style>
+            #expand{
+                display: none;
+            }
+            #dot {
+                background-color: rgb(228, 225, 225);
+                padding: 0px 5px;
+                cursor:pointer;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- JavaScript is <input type="button" value="..." onclick="
+        document.write('JavaScript is ipsum, dolor sit amet consectetur adipisicing elit. Illo impedit explicabo aut sit quibusdam deserunt obcaecati accusamus sint tempora! Consequatur, quos! Molestias officiis, totam quisquam accusamus nostrum officia deserunt veniam.')
+    "> -->
+    JavaScript is 
+    <span id="dot" onclick="
+            document.querySelector('#expand').style.display='inline';
+            this.style.display='none';
+    ">...</span> <span id="expand">ipsum, dolor sit amet consectetur adipisicing elit. Illo impedit explicabo aut sit quibusdam deserunt obcaecati accusamus sint tempora! Consequatur, quos! Molestias officiis, totam quisquam accusamus nostrum officia deserunt veniam.</span>
+    <hr>
+
+    JavaScript is <span 
+            style="
+                background-color:rgb(215, 215, 215);
+                padding:0 5px;
+                cursor:pointer;
+            " 
+            onclick="
+                this.style.display='none';
+                document.querySelector('#content').innerHTML=`ipsum, dolor sit amet consectetur adipisicing elit. Illo impedit explicabo aut sit quibusdam deserunt obcaecati accusamus sint tempora! Consequatur, quos! Molestias officiis, totam quisquam accusamus nostrum officia deserunt veniam.`;
+            ">...</span> 
+            <span id="content"></span>
+</html>
