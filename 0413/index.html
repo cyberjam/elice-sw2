@@ -3,6 +3,7 @@
     <head>
         <title>WEB - Welcome</title>
         <meta charset="utf-8">
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
         <style>
             h1{
                 border-bottom:10px solid green;
@@ -32,12 +33,15 @@
         <script>
             console.log(this);
             function night(){
-                document.querySelector('body').style.backgroundColor = 'black';
+                //document.querySelector('body').style.backgroundColor = 'black';
+                $('body').css("background-color",'black');
                 document.querySelector('body').style.color = 'white';
-                let as = document.querySelectorAll('a');
-                for(let i=0; i<as.length;i++){
-                    as[i].style.color='white'
-                }
+
+                //let as = document.querySelectorAll('a');
+                //for(let i=0; i<as.length;i++){
+                //    as[i].style.color='white'
+                //}
+                $('a').css("color","white")
             }
             function day(){
                 document.querySelector('body').style.backgroundColor = 'white';
